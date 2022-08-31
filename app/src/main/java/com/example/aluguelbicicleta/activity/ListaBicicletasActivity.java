@@ -18,7 +18,6 @@ public class ListaBicicletasActivity extends AppCompatActivity {
         //List<Bicicleta> bikes = todosAsBikes();
 
         ListView listaBikes = (ListView) findViewById(R.id.lista);
-        estou aqui japones
 
     }
 }
