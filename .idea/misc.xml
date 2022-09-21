@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/conve/AndroidStudioProjects/AluguelBicicleta/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/conve/AndroidStudioProjects/AluguelBicicleta/app/src/main/res/layout/activity_cadastro_pessoa.xml" value="0.18" />
+        <entry key="..\:/Users/conve/AndroidStudioProjects/AluguelBicicleta/app/src/main/res/layout/activity_lista_bikes.xml" value="0.22" />
+        <entry key="..\:/Users/conve/AndroidStudioProjects/AluguelBicicleta/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/conve/AndroidStudioProjects/AluguelBicicleta/app/src/main/res/layout/item_linha.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/conve/AndroidStudioProjects/AluguelBicicleta/app/src/main/res/xml/activity_lista_bikes.xml" value="0.1" />
+        <entry key="..\:/Users/conve/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.1" />
       </map>
     </option>
   </component>
