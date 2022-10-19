@@ -30,4 +30,10 @@
         <item>SE</item>
         <item>TO</item>
     </string-array>
+
+    <string-array name="arrayCategoria">
+        <item>Selecione um Estado </item>
+        <item>TESTE</item>
+        <item>TESTE 2</item>
+    </string-array>
 </resources>

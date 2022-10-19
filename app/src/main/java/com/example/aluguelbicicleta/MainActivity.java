@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.aluguelbicicleta.activity.CadastroBikeActivity;
 import com.example.aluguelbicicleta.activity.ListaBicicletasActivity;
 import com.example.aluguelbicicleta.model.Usuario;
 
@@ -50,13 +51,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*Spinner spinner = findViewById(R.id.estado);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.arrayEstado, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);*/
-
         TextView titulo = new TextView(this);
         titulo.setTypeface(Typeface.DEFAULT_BOLD);
         titulo.setText("Lista de Bicicletas");
@@ -76,21 +70,12 @@ public class MainActivity extends AppCompatActivity {
             new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i = new Intent(MainActivity.this, Usuario.class);
-                    startActivity(i);
+                    Intent intent = new Intent(MainActivity.this, CadastroBikeActivity.class);
+                    startActivity(intent);
                 }
             }
         );
 
     }
-    /*@Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String text = parent.getItemAtPosition(position).toString();
-        Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
-    }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }*/
 }

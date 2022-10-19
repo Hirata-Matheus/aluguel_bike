@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.aluguelbicicleta.MainActivity;
 import com.example.aluguelbicicleta.R;
+import com.example.aluguelbicicleta.activity.CadastroPessoaActivity;
 
 public class BottomNavigationView extends AppCompatActivity {
     @Override
@@ -23,7 +24,7 @@ public class BottomNavigationView extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent i = new Intent(BottomNavigationView.this, Usuario.class);
+                        Intent i = new Intent(BottomNavigationView.this, CadastroPessoaActivity.class);
                         startActivity(i);
                     }
                 }
