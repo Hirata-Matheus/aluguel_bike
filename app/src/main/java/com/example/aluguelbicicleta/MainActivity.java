@@ -1,15 +1,20 @@
 package com.example.aluguelbicicleta;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.aluguelbicicleta.activity.ListaBicicletasActivity;
+import com.example.aluguelbicicleta.model.Usuario;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Button b1 ;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -64,6 +70,18 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(customCountryList);
 
         listView.setOnItemClickListener((adapterView, view, position, l) -> Toast.makeText(getApplicationContext(),"Você Selecionou " + modelosBikes[position-1] + " o Modelo", Toast.LENGTH_SHORT).show());
+
+        b1 = findViewById(R.id.page2);
+        b1.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(MainActivity.this, Usuario.class);
+                    startActivity(i);
+                }
+            }
+        );
+
     }
     /*@Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
